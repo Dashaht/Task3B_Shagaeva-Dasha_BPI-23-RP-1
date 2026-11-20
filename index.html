@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическое задание 3Б — Справочник пользователей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Справочник пользователей</h1>
+
+  <!-- 1. Кнопка загрузки пользователей -->
+  <button id="loadBtn">Загрузить пользователей</button>
+
+  <!-- Область сообщений: загрузка, успех, ошибка -->
+  <p id="status"></p>
+
+  <!-- 2. Подписанное поле поиска по имени -->
+  <label for="search">Поиск по имени</label>
+  <input type="text" id="search" placeholder="Введите имя" disabled>
+
+  <!-- 3. Область списка пользователей -->
+  <ul id="usersList"></ul>
+
+  <hr>
+
+  <!-- 4. Отдельная область публикаций выбранного пользователя -->
+  <div id="postsArea">
+    <h2 id="postsTitle">Публикации пользователя</h2>
+    <p id="postsStatus"></p>
+    <ul id="postsList"></ul>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
